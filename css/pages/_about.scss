@@ -1,0 +1,125 @@
+// MISSION & VISION
+.mv{
+    background: #ffffff;
+    padding: 120px;
+}
+.mv-content{
+    margin-left: 100px;
+    width: 70%;
+    .title{
+        display: flex;
+        >div{
+            margin: 18px 18px 18px 0;
+        }
+        h2{
+            margin: 0;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 36px;
+        }
+    }
+    p{
+        color: rgb(52, 52, 52);
+        margin: 20px 0;
+        font-family: 'Robot', sans-serif;
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+// BEST SERVICE
+.best-services{
+    background: url('../../img/gallery/section_bg02.jpg');
+    img{
+        width: 100%;
+        border-radius: 0;
+    }
+    .bs-wrapper{
+        padding: 100px 0;
+        display: grid;
+        grid-template-columns: 48% 52%;
+        color: white;
+        gap: 80px;
+    }
+    
+}
+h1{
+    margin: 0 0 50px;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60px;
+}
+.bs-content{
+    margin-top: 80px;
+    p:first-of-type{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    p{
+        line-height: 30px;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        width: 90%;
+    }
+    p:last-of-type{
+        margin-bottom: 60px;
+    }
+}
+.red-title{
+    color: #eb566c;
+    text-transform: uppercase;
+    display: flex;
+    .red-line{
+        margin: 28px 18px 18px 0;
+        border-color: #eb566c;
+        h3{
+            margin-left: 15px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+        }
+    }
+}
+// OUT TEAM
+.team-wrapper{
+    padding: 100px 0;
+}
+.staff{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr 1fr 1fr);
+    gap: 40px;
+}
+.worker{
+    background: #fff;
+    .img-effect{
+        overflow: hidden;
+        img{
+            display: block;
+            border-radius: 0;
+            transition: .8s all ease-in-out;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+    .text-content{
+        padding: 0 40px;
+        h2{
+            margin: 25px 0 0;
+        }
+        .red-subtitle{
+            margin-bottom: 10px;
+            .red-line{
+                width: 30px;
+                margin: 24px 15px 18px 0;
+            }
+            display: flex;
+            h3{
+                font-size: 14px;
+            font-weight: 300;
+            line-height: 21px;
+            color: #eb566c;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+//WHATS NEW
+.ln-whats-newdiv:first-of-type, .ln-whats-new .social-counter{
+    @include radius;
+    background: #fff;
+}
+.ln-whats-new{
+    border-bottom: 0;
+    img{
+        width: 100%;
+    }
+}
+.ln-article{
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+        margin: 30px 0 20px;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        line-height: 30px;
+        color: #506172; 
+        margin: 20px 0;
+    }
+}
+// SHARE
+.share{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 40px;
+        
+    }
+}

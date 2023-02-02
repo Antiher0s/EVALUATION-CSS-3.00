@@ -1,0 +1,30 @@
+// WHATS NEW
+.category-whats-new{
+    border-bottom: 0;
+}
+.category-whats-new>div:first-of-type, .category-whats-new .social-counter{
+    @include radius;
+    background: #fff;
+}
+.wn-content-wrapper{
+    grid-template-columns: repeat(2, 1fr);
+    gap:30px 60px;
+    .text-content{
+        width: 95%;
+    }
+}
+
+
+.wn-pages-nav{
+    >*{
+        margin-right: 20px;
+    }
+    a{
+        font-family: 'Roboto', sans-serif;
+        color: rgb(112, 112, 112);
+        @include titlesurvol;
+    }
+    .--active{
+        color: #000;
+    }
+}
