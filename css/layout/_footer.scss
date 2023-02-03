@@ -1,0 +1,58 @@
+footer{
+    background: #000;
+    .footer-wrapper{
+        padding: 140px 0;
+        display: grid;
+        grid-template-columns: 35% 45% 30%;
+        @media screen and (max-width:575px){
+            display: block;
+            padding:80px 15px;
+            }
+        >img{
+                @media screen and (max-width:575px){
+                    width: 100%;
+                    }
+        }
+    }
+    
+}
+.contact{
+    color: #b1bace;
+    p{
+        line-height: 25px;
+        margin: 30px 0;
+        font-size: 14px;
+        width: 54%;
+        @media screen and (max-width:575px){
+            width: 100%;
+            }
+    }
+}
+.popular-post{
+    color: #fff;
+    h2{
+        font-weight: 700;
+        font-size: 22px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .pp-article{
+        display: flex;
+        margin-bottom: 20px;
+        .text-content{
+            margin-left: 20px;
+            h3{
+                line-height: 24px;
+                width: 80%;
+                margin:10px 0 0;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        
+            a{
+            color: #fff;
+            @include titlesurvol;
+            }
+        }
+    }
+}

@@ -16,6 +16,10 @@
 
 
 .wn-pages-nav{
+    @media screen and (max-width:575px){
+        margin:100px 15px 20px;
+
+        }
     >*{
         margin-right: 20px;
     }

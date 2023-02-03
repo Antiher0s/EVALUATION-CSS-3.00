@@ -1,6 +1,9 @@
 .bh-wrapper, .logo-wrapper, nav, .news, .most-popular, .tdn-wrapper, .ads, .footer-wrapper, .mv-wrapper, .bs-wrapper, .team, .contact-wrapper{
     width: 1180px; 
     margin: 0 auto;
+    @media screen and (max-width:575px){
+        width: 100%;
+    }
 }
 main{
     background: #f7f7f7;
@@ -52,6 +55,13 @@ main{
     @include transition;
     &:hover{
         background: #db0e2d;
+        @media screen and (max-width:575px){
+            background: #fff;
+        }
+    }
+    @media screen and (max-width:575px){
+        color: #ff2142;
+        background: #000;
     }
 }
 .music-ads{
@@ -59,5 +69,20 @@ main{
     justify-content: center;
     width: 70%;
     margin: 60px auto;
+    @media screen and (max-width:575px){
+        display: none;
+        }
 
+}
+// IMAGE EFFECT
+.img-effect{
+    overflow: hidden;
+    img{
+        display: block;
+        border-radius: 0;
+        transition: .8s all ease-in-out;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
 }

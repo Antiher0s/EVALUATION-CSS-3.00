@@ -1,10 +1,30 @@
-.contact-form{
+.contact.form{
     background: #ffffff;
+
+}
+.wrapper-form{
     padding: 120px 0;
+    @media screen and (max-width:1200px){
+            width: 930px;
+            }
+        @media screen and (max-width:990px){
+            width: 680px;
+            }
+        @media screen and (max-width:770px){
+            width: 420px;
+            }
+
+
     iframe{
         width: 100%;
+        
+        
+        @media screen and (max-width:575px){
+        display: none;
+        }
     }
 }
+.
 .contact-content{
     display: grid;
     grid-template-columns: 65% 35%;

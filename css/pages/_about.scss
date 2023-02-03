@@ -1,10 +1,15 @@
 // MISSION & VISION
 .mv{
+    padding: 100px 0;
     background: #ffffff;
-    padding: 120px;
+    @media screen and (max-width:575px){
+        padding: 0;
+        }
 }
 .mv-content{
     margin-left: 100px;
+    margin: 0 auto;
+
     width: 70%;
     .title{
         display: flex;
@@ -39,6 +44,10 @@
         grid-template-columns: 48% 52%;
         color: white;
         gap: 80px;
+        @media screen and (max-width:575px){
+            padding: 100px 15px;
+            display: block;
+        }
     }
     
 }
@@ -47,9 +56,16 @@ h1{
     font-size: 50px;
     font-weight: 800;
     line-height: 60px;
+    @media screen and (max-width:575px){
+        font-size: 31px;
+        margin: 0 0 40px;
+    }
 }
 .bs-content{
     margin-top: 80px;
+    @media screen and (max-width:575px){
+        margin-top: 40px;
+    }
     p:first-of-type{
         font-size: 20px;
         font-weight: 500;
@@ -68,42 +84,59 @@ h1{
     color: #eb566c;
     text-transform: uppercase;
     display: flex;
-    .red-line{
-        margin: 28px 18px 18px 0;
-        border-color: #eb566c;
-        h3{
-            margin-left: 15px;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 27px;
+    @media screen and (max-width:575px){
+        color: #fff;
+    }
+    h3{
+        margin-left: 15px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        @media screen and (max-width:575px){
+            font-size: 14px;
         }
+    }
+    .red-line{
+        margin: 31px 0 18px 0;
+        border-color: #eb566c;
+        @media screen and (max-width:575px){
+            margin: 25px 0 18px 0;
+            border-color: #fff;
+        }
+        
     }
 }
 // OUT TEAM
 .team-wrapper{
     padding: 100px 0;
+    @media screen and (max-width:575px){
+        padding: 15px;
+    }
 }
 .staff{
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr 1fr 1fr);
     gap: 40px;
+    @media screen and (max-width:575px){
+        display: block;
+    }
 }
 .worker{
     background: #fff;
-    .img-effect{
-        overflow: hidden;
-        img{
-            display: block;
-            border-radius: 0;
-            transition: .8s all ease-in-out;
-            &:hover{
-                transform: scale(1.05);
-            }
+    @media screen and (max-width:575px){
+        margin-bottom: 30px;
+    }
+    img{
+        @media screen and (max-width:575px){
+            width: 100%;
         }
     }
     .text-content{
         padding: 0 40px;
+        @media screen and (max-width:575px){
+            padding: 0 40px 10px;
+        }
         h2{
             margin: 25px 0 0;
         }
