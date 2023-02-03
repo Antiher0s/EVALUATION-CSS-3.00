@@ -1,43 +1,53 @@
-.contact.form{
+.contact-form{
     background: #ffffff;
-
-}
-.wrapper-form{
     padding: 120px 0;
-    @media screen and (max-width:1200px){
+
+    .contact-wrapper{
+        @media screen and (max-width:1200px){
+            margin: 0 auto;
             width: 930px;
             }
         @media screen and (max-width:990px){
+            margin: 0 auto;
             width: 680px;
             }
         @media screen and (max-width:770px){
+            margin: 0 auto;
             width: 420px;
             }
+        @media screen and (max-width:470px){
+                padding: 0 15px;
+                width: 100%;
+        }
+    }
 
 
     iframe{
         width: 100%;
-        
-        
         @media screen and (max-width:575px){
         display: none;
         }
     }
 }
-.
+
 .contact-content{
-    display: grid;
-    grid-template-columns: 65% 35%;
+    width: 100%;
+    
+}
+.contact-content  h2{
+    color: #000;
+    font-size: 27px;
+    font-weight: 600;
 }
 // FORMULAIRE
 .form-wrapper{
-    h2{
-        color: #000;
-        font-size: 27px;
-        font-weight: 600;
-    }
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    @media screen and (max-width:990px){
+        grid-template-columns: 1fr;
+        }
     form{
-        
         display: grid;
         grid-template-columns: repeat(2 , 1fr);
         grid-template-rows: repeat(6, 1fr);
@@ -83,12 +93,25 @@
 }
 // CONTACTS
 .contacts{
+    @media screen and (max-width:990px){
+        margin-top: 50px;
+            
+    }
     >div{
+        width: 80%;
         display: flex;
         gap: 20px;
-        margin: 20px 0;
+        margin-left: 160px;
+        margin-bottom: 40px;
+        @media screen and (max-width:1200px){
+            margin-left: 100px;
+            width: 70%;
+            }
+            @media screen and (max-width:990px){
+            margin-left: 0;
+                }
+            
     }
-    padding: 80px 0 0 140px;
     i{
         color: #8f9195;
         margin-top: 7px;
@@ -99,6 +122,7 @@
         margin-top: 5px;
         color: #8f9195;
         display: block;
+        line-height: 30px;
     }
     span:first-of-type{
     color: #000;

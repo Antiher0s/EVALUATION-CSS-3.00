@@ -4,12 +4,12 @@
     height: 80px;
     line-height: 80px;
     position: relative;
-    @media screen and (max-width:575px){
+    @media screen and (max-width:770px){
         height: 70px;
     }
     >a{
         display: none;
-        @media screen and (max-width:575px){
+        @media screen and (max-width:770px){
             display: block;
             position: absolute;
             top: 7px;
@@ -26,6 +26,14 @@
         right: 15px;
         transform: translateY(-50%);
         cursor: pointer;
+        @media screen and (max-width:770px){
+            display: block;
+            
+        }
+        @media screen and (max-width:575px){
+            display: block;
+            
+        }
         div{
             border: 0.125rem solid #fff;
             width: 100%;
@@ -60,7 +68,7 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: 75% 18% 7%;
-        @media screen and (max-width:575px){
+        @media screen and (max-width:770px){
             display: none;
             }
         &>*{
@@ -80,6 +88,11 @@
             border-right: 1px solid #ededed;
             padding-right: 20px;
             margin-right: 20px;
+            @media screen and (max-width:990px){
+                padding-right: 12px;
+            margin-right: 12px;
+                }
+            
             &:last-of-type{
                 border-right: none;
             }
@@ -102,11 +115,5 @@
         justify-content: center;
     }
 }
-// BURGER MENU
-.burger-menu{
-    display: none;
-    @media screen and (max-width:575px){
-        display: block;
-        
-    }
-}
+
+

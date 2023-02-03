@@ -3,15 +3,37 @@ footer{
     .footer-wrapper{
         padding: 140px 0;
         display: grid;
-        grid-template-columns: 35% 45% 30%;
+        grid-template-columns: 35% 45% 20%;
+        @media screen and (max-width:1200px){
+            width: 80%;
+            }
+        @media screen and (max-width:990px){
+            grid-template-columns: repeat(2, 1fr);
+            }
+        @media screen and (max-width:770px){
+            width: 60%;
+            grid-template-columns: 1fr;
+
+        }
         @media screen and (max-width:575px){
+            width: 60%;
             display: block;
-            padding:80px 15px;
             }
         >img{
-                @media screen and (max-width:575px){
-                    width: 100%;
-                    }
+            width: 270px;
+            @media screen and (max-width:1200px){
+                width: 210px;
+            }
+            @media screen and (max-width:990px){
+                margin-top: 50px;
+                width: 270px;
+            }
+            @media screen and (max-width:770px){
+                width: 230px;
+            }
+            @media screen and (max-width:575px){
+                width: 100%;
+            }
         }
     }
     
@@ -39,14 +61,22 @@ footer{
     .pp-article{
         display: flex;
         margin-bottom: 20px;
+        
         .text-content{
+            
             margin-left: 20px;
+            @media screen and (max-width:770px){
+                width: 200px;
+            }
             h3{
                 line-height: 24px;
                 width: 80%;
                 margin:10px 0 0;
                 font-size: 16px;
                 font-weight: 500;
+                @media screen and (max-width:770px){
+                    margin: 0;
+                }
             }
         
             a{

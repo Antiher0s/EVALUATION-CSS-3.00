@@ -6,11 +6,19 @@
     }
 }
 .header-news{
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 780px 370px;
+    grid-template-columns: 66% 34%;
     gap: 30px;
     padding-bottom: 30px;
     border-bottom: 1px solid #ebebeb;
+    @media screen and (max-width:1200px) and (min-width:990px){
+    grid-template-columns: 66% 34%;
+        }
+    @media screen and (max-width:990px) and (min-width:770px){
+    display: block;
+        }
+        
     @media screen and (max-width:575px){
         grid-template-columns: 1fr;
         margin: 0 15px;
@@ -35,6 +43,7 @@
     .text-content{
         position: absolute;
         left: 30px;
+        
         @media screen and (max-width:575px){
             left: 5px;
         }
@@ -70,6 +79,7 @@
             font-size: 40px;
             line-height: 52px;
             width: 740px;
+            
         }
 }
 // SMALL NEWS
@@ -93,7 +103,11 @@
         }
     }
 }
-
+.header-news .right-column{
+    @media screen and (max-width:990px) and (min-width:770px){
+        margin-top: 20px;
+    }
+}
 // WHATS NEWS
 .whats-new{
     margin-top: 50px;
@@ -115,7 +129,7 @@
     display: flex;
     justify-content: space-between;
     line-height: 80px;
-    @media screen and (max-width:575px){
+    @media screen and (max-width:1200px){
         display: block;
     }
     h1{
@@ -152,7 +166,7 @@
     display: grid;
     grid-template-columns: 45% 55%;
     gap: 40px;
-    @media screen and (max-width:575px){
+    @media screen and (max-width:1200px){
         display: block;
         margin-top: 30px;
         
@@ -189,6 +203,13 @@
                 }
         }
     }
+    // .wn-right-column{
+    //     @media screen and (max-width:1200px){
+    //         display: grid;
+    //         grid-template-columns: repeat(2, 1fr);
+            
+    //     }
+    // }
     .wn-small-news{
         display: flex;
         gap: 20px;
@@ -196,6 +217,7 @@
         @media screen and (max-width:575px){
             display: block;
             }
+        
         .text-content{
             h3{
                 width: 80%;
@@ -204,6 +226,11 @@
                 font-weight: 500;
                 line-height: 22px;
                 margin: 10px 0 5px;
+                @media screen and (max-width:1200px){
+                    font-size: 11px;
+                    width: 100%;
+
+                }
             }
         }
     }
@@ -321,10 +348,11 @@
         }
     }
 }
-// MOST POPULAR / ADS
-
 // MOST POPULAR
 .mp-ads{
+    @media screen and (max-width:1200px){
+        width: 90%;
+        }
     @media screen and (max-width:575px){
         display: none;
         }
@@ -351,7 +379,8 @@
         line-height: 18px;
         margin: 15px;
         @media screen and (max-width:575px){
-        margin-bottom: 40px;            }
+        margin-bottom: 40px;            
+    }
     }
     .carousel-btns{
         @media screen and (max-width:575px){
@@ -377,6 +406,9 @@
     }
     article{
         width: 245px;
+        @media screen and (max-width:1200px){
+            width: 100%;
+            }
         @media screen and (max-width:575px){
             width:90%;
         }
@@ -397,6 +429,11 @@
                 font-weight: 700;
             }
         }
+    }
+    article:nth-of-type(2){
+        @media screen and (max-width:1200px){
+            display: none;
+            }
     }
     article:nth-last-of-type(2), article:nth-last-of-type(1){
         @media screen and (max-width:575px){
@@ -479,6 +516,9 @@
 // FOOTER ADS
 .ads{
     padding:80px 120px;
+    @media screen and (max-width:1200px){
+        padding:30px 15px;
+        }
     @media screen and (max-width:575px){
         padding:30px 15px;
         }
